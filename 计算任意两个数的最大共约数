@@ -1,0 +1,36 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int n = 0;
+	int m = 0;
+	int c = 0;
+	int a = 0;
+	scanf("%d%d", &n, &m);
+	if (n < m)
+	{
+		a = n;
+		n = m;
+		m = a;
+
+		while (m % n != 0)
+		{
+			c = m % n;
+			m = n;
+			n = c;
+		}
+	}
+	else
+	
+		while (m % n != 0)
+			{
+				c = m % n;
+				m = n;
+				n = c;
+			}
+
+
+	printf("%d", n);
+	return 0;
+
+}
