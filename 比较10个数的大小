@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int arr[] = { 1,2,9,66,99,77,4,5,7,10 };
+	int a = 0;
+	int max = arr[0];
+	int c = sizeof(arr) / sizeof(arr[0]);
+		for (a = 0; a <= c; a++)
+		{
+			if (max < arr[a])
+				max = arr[a];
+	}
+	printf("%d", max);
+
+	return 0;
+}
