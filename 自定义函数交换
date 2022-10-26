@@ -1,0 +1,23 @@
+#include<stdio.h>
+void get(int*px,int*py)
+{
+	int c = 0;
+	c = *px;
+	*px = *py;
+	*py = c;
+	
+	
+}
+
+
+
+int main()
+{
+	int a = 10;
+	int b = 30;
+
+	 get(&a, &b);
+	 printf("%d   %d", a, b);
+
+	return 0;
+}
