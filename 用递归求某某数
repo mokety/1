@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int g(int a)
+{ 
+	if (a <= 2)
+	
+		return 1;
+	
+	else
+	
+		return (g(a - 1) + g(a - 2));
+	
+}
+
+
+
+int main()
+{
+	int c = 0;
+	int a = 0;
+	scanf("%d", &a);
+	c=g(a);
+	printf("%d",c);
+	return 0;
+}
