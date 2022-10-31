@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a = 3;
+	int b = 5;
+	printf("%d %d\n", a, b);
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	printf("%d %d\n", a, b);
+return 0;
+}
+36.（35的进阶）
+#include<stdio.h>
+int main()
+{
+	int a = 3;
+	int b = 5;
+	printf("%d %d\n", a, b);
+	a = a^b;
+	b = a ^ b;
+	a = a ^ b;
+	printf("%d %d\n", a, b);
+return 0;
+}
