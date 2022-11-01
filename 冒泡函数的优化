@@ -1,0 +1,39 @@
+#include<stdio.h>
+void g(int arr[],int sz)
+{
+	int a = 0;
+	for (a = 0; a < sz-1 ; a++)
+	{
+		int x = 1;
+		int z = 0;
+		for (z = 0; z < sz- a-1; z++)
+		{
+	
+			if (arr[z]> arr[z+1])
+			{
+				int s = arr[z + 1];
+				arr[z + 1] = arr[z];
+				arr[z] = s;
+				x = 0;
+		}
+
+		}
+		if (x == 1)
+		{
+			break;
+		}
+	}
+}
+
+int main()
+{
+	int arr[] = {1,9,2,3,4,5,6,7,8,};
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	g(arr,sz);
+	int a = 0;
+	for (a = 0; a <=sz - 1; a++)
+	{
+		printf("%d ", arr[a]);
+	}
+	return 0;
+}
