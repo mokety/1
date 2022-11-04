@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	float  a = 4.3;
+
+	printf("请输入\n");
+	printf("%fcm", a * 2.54);
+
+	return 0;
+}
