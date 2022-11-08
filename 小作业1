@@ -1,0 +1,24 @@
+#include<stdio.h>
+void jolly()
+{
+	printf("for he's a jolly good follow\n");
+
+}
+void deny()
+{
+	printf("while nobody can deny\n");
+
+}
+int main()
+{
+	int i = 0;
+	for (i = 0; i < 3; i++)
+	{
+		jolly();
+
+	}
+
+	deny();
+
+	return 0;
+}
