@@ -1,0 +1,26 @@
+#include<stdio.h>
+int coop()
+{
+	int a = 1;
+ char* p = (char*)&a;
+ return *p;
+}
+
+int main()
+{
+
+	int ret = coop();
+	if (ret == 1)
+	{
+
+		printf("是小端");
+	}
+	else
+	{
+		printf("是大端");
+	}
+
+
+
+	return 0;
+}
